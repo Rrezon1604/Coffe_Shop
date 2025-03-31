@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 120px 2fr 120px;
+}
+
+.container .left{
+    background-color: #2f2e2e;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container .left>div:first-child{
+    border-bottom: 1px solid white;
+}
+
+.container .left>div:first-child h2{
+    color: cadetblue;
+}
+
+.container .left div:last-child{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .left div:last-child a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.container .left div:last-child a:nth-child(2){
+    background-color: rgb(183, 183, 183);
+    color: black;
+}
+
+.container .left div:last-child a:hover{
+    background-color: rgb(183, 183, 183);
+    color: black;
+}
+
+.container .mid{
+    background-color: #3d3939;
+}
+
+.container .mid .shfaq{
+    width: 100%;
+    margin-top: 20px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .mid .shfaq form{
+    display: flex !important;
+    justify-content: space-around;
+}
+
+
+
+.container .mid .porosia{
+    height: 80vh;        
+    overflow-y: auto;
+    overflow-x: hidden; 
+    margin-top: 20px;
+}
+
+
+.container .mid .cmimitotal{
+    width: 100%;
+    color: white;
+}
+
+.container .mid .cmimitotal h3{
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.container .mid .cmimitotal h3 span{
+    color: cyan;
+}
+
+
+.container .right{
+    background-color: #2f2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.container .right .date{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .right .date h4{
+    margin-top: 8px;
+}
+
+.container .right .buttons{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.container .right .buttons button,
+.container .right form input,
+.container .left form input,
+.container .mid .shfaq form input{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #3d3939;
+    border: 1px solid rgb(155, 155, 155);
+    color: white;
+    cursor: pointer;
+}
+
+.delbutton{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #3d3939;
+    border: 1px solid rgb(155, 155, 155);
+    color: white;
+    cursor: pointer;
+}
+
+.container .right .buttons button:hover,
+.container .left form input:hover,
+.container .right form input:hover,
+.delbutton:hover,
+.container .mid .shfaq form input:hover{
+    background-color: #2a2727;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;   
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #302c2c;
+    font-weight: bold;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #535353;
+}
+
+.no-border {
+    border: none; /* Heq kufirin e tabelës */
+    border-collapse: collapse; /* Siguron që të gjitha qelizat janë të bashkuara pa hapësira */
+}
+
+.no-border th,
+.no-border td {
+    border: none; /* Heq kufirin e qelizave */
+}
+
+
+
+.alert {
+    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+}
